@@ -98,3 +98,7 @@ PageETH Leverages proof of personhood via Worldcoin verification system, which p
 
 ### The Graph
 * The Graph is used to index the data and make it available for the recipient to query the data.
+
+### NounsDAO
+* We are using nouns design, font and color scheme, using pixelated images and components revives the vintage theme of pager tech.
+
