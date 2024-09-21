@@ -1,0 +1,38 @@
+/* Individual message styling */
+.message-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    /* padding: 10px; */
+    word-wrap: break-word;
+    margin-top: 1vh;
+    margin-left: 10%;
+    margin-right: 2%;
+  }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.message {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px dashed black;
+}
+
+.footer {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.sender {
+  display: flex;
+  flex-direction: row;
+}

@@ -1,0 +1,10 @@
+/* Message window container */
+.message-window {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Adjust the height as needed */
+    width: 100%;
+    /* max-width: 800px; Optional: maximum width for the container */
+    overflow-y: auto;
+    background-color: rgb(182, 182, 182);
+  }

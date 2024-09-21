@@ -1,0 +1,54 @@
+/* Parent container for the message sender component */
+.msg-sender-component {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Align items vertically in the center */
+  justify-content: center; /* Center horizontally */
+  width: 100%;
+  padding: 0 5%; /* Padding for spacing on both sides */
+  box-sizing: border-box;
+}
+
+/* Container for the text input field */
+.text-input-container {
+  flex-grow: 1;
+  width: 75%; /* Ensure it takes up 75% of the width */
+  margin-right: 10px; /* Space between the input field and the button */
+}
+
+/* Dashed border input field */
+.dashed-input {
+  width: 100%;
+  padding: 10px;
+  border: 2px dashed #000; /* Dashed border with black color */
+  border-radius: 0px;
+  font-size: 16px;
+  font-family: 'Pixelify Sans', sans-serif;
+  box-sizing: border-box;
+  height: 100%; /* Full height of the container */
+  /* Remove padding if necessary to fit the container height */
+}
+
+/* Container for the send button */
+.msg-send-button {
+  width: 10%; /* Button takes up 10% of the width */
+  display: flex;
+  align-items: center; /* Center button vertically */
+  justify-content: center; /* Center button horizontally */
+}
+
+/* Send button styling */
+.msg-send-button button {
+  font-family: 'Pixelify Sans', sans-serif;
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  border-radius: 0px;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  font-size: 16px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
