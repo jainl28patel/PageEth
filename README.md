@@ -87,7 +87,7 @@ PageETH Leverages proof of personhood via Worldcoin verification system, which p
 #### Custom Hook
 * Custom Hook contract takes the data from the message and encorporates Sign's Attestation to the message sends the same on the chain.
 
-### Layer0 contracts
+### LayerZero contracts
 * Layer0 contracts ensures that the message is sent to all the configured chains currently `base-sepolia`, `optimism-sepolia` and `polygon-amoy`.
 * Each message recieved on each chain is broadcasted to all the other chains using Layer0 in batch send mode.
   
