@@ -1,0 +1,26 @@
+type MessageReceived @entity(immutable: true) {
+  id: Bytes!
+  srcEid: BigInt! # uint32
+  message: String! # string
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type OwnershipTransferred @entity(immutable: true) {
+  id: Bytes!
+  previousOwner: Bytes! # address
+  newOwner: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type PeerSet @entity(immutable: true) {
+  id: Bytes!
+  eid: BigInt! # uint32
+  peer: Bytes! # bytes32
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}

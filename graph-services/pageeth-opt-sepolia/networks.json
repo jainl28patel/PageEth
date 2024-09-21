@@ -1,0 +1,8 @@
+{
+  "optimism-sepolia": {
+    "Contract": {
+      "address": "0xF919Feb36d20da0590e2b99C479F38c8141EbF9D",
+      "startBlock": 17385030
+    }
+  }
+}

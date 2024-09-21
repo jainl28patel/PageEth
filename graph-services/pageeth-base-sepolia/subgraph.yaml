@@ -1,0 +1,32 @@
+specVersion: 1.0.0
+indexerHints:
+  prune: auto
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: Contract
+    network: base-sepolia
+    source:
+      address: "0xd928A87f1653A8E28aa9EE095BeaCaEDC9676A2D"
+      abi: Contract
+      startBlock: 15402155
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - MessageReceived
+        - OwnershipTransferred
+        - PeerSet
+      abis:
+        - name: Contract
+          file: ./abis/Contract.json
+      eventHandlers:
+        - event: MessageReceived(uint32,string)
+          handler: handleMessageReceived
+        - event: OwnershipTransferred(indexed address,indexed address)
+          handler: handleOwnershipTransferred
+        - event: PeerSet(uint32,bytes32)
+          handler: handlePeerSet
+      file: ./src/contract.ts

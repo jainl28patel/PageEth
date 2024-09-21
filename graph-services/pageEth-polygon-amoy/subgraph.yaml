@@ -1,0 +1,32 @@
+specVersion: 1.0.0
+indexerHints:
+  prune: auto
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: Contract
+    network: polygon-amoy
+    source:
+      address: "0xF214eB925bDAAf31aab7391B025A52180FaaB74f"
+      abi: Contract
+      startBlock: 12080064
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - MessageReceived
+        - OwnershipTransferred
+        - PeerSet
+      abis:
+        - name: Contract
+          file: ./abis/Contract.json
+      eventHandlers:
+        - event: MessageReceived(uint32,string)
+          handler: handleMessageReceived
+        - event: OwnershipTransferred(indexed address,indexed address)
+          handler: handleOwnershipTransferred
+        - event: PeerSet(uint32,bytes32)
+          handler: handlePeerSet
+      file: ./src/contract.ts
