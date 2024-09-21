@@ -72,6 +72,10 @@ PageETH Leverages proof of personhood via Worldcoin verification system, which p
 * Before Sending a message through Sign's Service user's attestation needs to be verified.
 * A hook contract is triggered during the attestation process, this contract makes the attested data available to all the supported chains, so that it can be queried without relying on a single blockchain.
 
+### Worldcoin
+* Preventing bot attacks (DOS) or Sybil attacks, only real person can use our protocol.
+
+
 ### ENS Resolution
 * Remembering the Address of the recipient is a difficult task. Especially when the sender is a hardware device.
 * ENS Resolution helps in resolving the address of the recipient.
