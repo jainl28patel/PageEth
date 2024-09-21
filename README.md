@@ -16,7 +16,7 @@ PageEth can be used for following types of communications
 |------------|------------|
 | base-sepolia  | onchain_evm_84532_0x2e9   |
 
-### Layer0 Contracts
+### LayerZero Contracts
 | Chain   | Contract   |
 |------------|------------|
 | Base-Sepolia | 0xd928A87f1653A8E28aa9EE095BeaCaEDC9676A2D |
@@ -88,8 +88,8 @@ PageETH Leverages proof of personhood via Worldcoin verification system, which p
 * Custom Hook contract takes the data from the message and encorporates Sign's Attestation to the message sends the same on the chain.
 
 ### LayerZero contracts
-* Layer0 contracts ensures that the message is sent to all the configured chains currently `base-sepolia`, `optimism-sepolia` and `polygon-amoy`.
-* Each message recieved on each chain is broadcasted to all the other chains using Layer0 in batch send mode.
+* LayerZero contracts ensures that the message is sent to all the configured chains currently `base-sepolia`, `optimism-sepolia` and `polygon-amoy`.
+* Each message recieved on each chain is broadcasted to all the other chains using LayerZero in batch send mode.
   
 
 ### The Graph
